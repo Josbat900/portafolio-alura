@@ -397,6 +397,8 @@ p,h1,h2,h3,div,img,form,span,label{
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid #A2A2A2;
+    border-radius: 4px;
 }
 
 .inputContainer>label{
@@ -441,9 +443,180 @@ button{
     border: none;
     background-color: rgb(194, 101, 210);
     color: white;
+    border-radius: 4px;
+}
+
+.footer{
+    height: 30px;
+    text-align: center;
+    margin: 15px;
 }
 @media (max-width: 768px){
-    .containerLinks{
+    /* body{
+        width: 768px
+    }; */
+
+    h1,h2{
+        font-size: 22px;
+    }
+    /* navbar */
+    .navbar{
+        margin: 0px;
+        padding: 16px 32px 16px 32px;
+        width: auto;
+    }
+    .containerLinks>a{
         display: none;
+    }
+    .containerLinks>a:nth-child(6){
+        display: block;
+    }
+    /* presentacion */
+    .presentation{
+        width: auto;
+        margin: auto;
+        height: 210px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 32px;
+        padding: 0px 32px 0 32px
+    }
+
+    .information{
+        margin: 0px;
+        width: 524px;
+        height: 130px;
+        /* margin: 40px 32px 40px 32px;; */
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .information> h1{
+        font-size: 22px;
+    }
+    .information>p{
+        font-size: 16px;
+        margin: 0;
+    }
+
+   .linkGoUp>a{
+    font-size: 16px;
+   }
+
+    .InformationImg{
+        width: 146px;
+        height: 146px;
+    }
+
+    .mePicture{
+        width: 146px;
+        height: 146px;
+    }
+
+    /* about me */
+
+    .aboutMe{
+        height: 286px;
+        width: 768px;
+    }
+
+    .aboutMePadding{
+        width: 704px;
+        height: 222px;
+    }
+
+    .aboutMePadding>h2{
+        font-size: 22px;
+    }
+
+    .aboutMePadding>p{
+        font-size: 14px;
+        width: auto;
+    }
+
+    .skillsAndHobbies{
+        width: 768px;
+        height: 780px;
+        gap: 0;
+        margin: 0;
+    }
+
+    .containerSkills{
+        width: auto;
+        height: auto;
+    }
+
+    .boxContainer{
+        width: 704px;
+        height: 268px;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 224px;
+        height: 118px;
+        flex-grow: 1;
+    }
+
+    /* formacion */
+
+    .containerFormation{
+        width: 768px;
+        height: 291px;
+    }
+    .containerFormation> .boxContainer{
+        width: 768px;
+        height: 169px;
+    }
+
+    .boxF{
+        width: 224px;
+        height: 169px;
+    }
+
+    .envolverImg{
+        width: 224px;
+        height: 118px;
+    }
+
+    /* proyecetos personales */
+
+    .experienceBox{
+        width: 704px;
+        height: 427px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experienceImg{
+        width: 704px;
+        height: 320px;
+    }
+
+    /* contactame */
+
+    .contactame{
+        height: 637px;
+    }
+    .formWrapImg{
+        display: none;
+    }
+
+    .contactameWrap{
+        margin: 0;
+        width: 704px;
+        height: 573px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapData{
+     justify-content: center;
+    }
+    .formContact{
+        gap: 16px;
     }
 }
