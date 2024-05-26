@@ -1,4 +1,5 @@
 *{
+    box-sizing: border-box;
     background-color: #F5F5F5;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #464646;
@@ -549,6 +550,11 @@ button{
         height: auto;
     }
 
+    .containerSkills >h2{
+        font-size: 22px;
+    }
+
+
     .boxContainer{
         width: 704px;
         height: 268px;
@@ -561,11 +567,19 @@ button{
         flex-grow: 1;
     }
 
+    .box>h3{
+        font-size: 16px;
+    }
+
     /* formacion */
 
     .containerFormation{
         width: 768px;
         height: 291px;
+    }
+
+    .containerFormation> h2{
+        font-size: 22px;
     }
     .containerFormation> .boxContainer{
         width: 768px;
@@ -576,7 +590,12 @@ button{
         width: 224px;
         height: 169px;
     }
-
+    .boxF>h3{
+        font-size: 16px;
+    }
+    .boxF>p{
+        font-size: 14px;
+    }
     .envolverImg{
         width: 224px;
         height: 118px;
@@ -616,7 +635,257 @@ button{
     .wrapData{
      justify-content: center;
     }
+
+    .wrapText>h2{
+        font-size: 22px;
+    }
     .formContact{
         gap: 16px;
+    }
+}
+
+/* dispositivos movil */
+
+@media (max-width: 360px){
+    body{
+        width: 100%;
+    };
+
+    h1,h2{
+        font-size: 22px;
+    }
+    /* navbar */
+    .navbar{
+        margin: 0px;
+        padding: 16px 32px 16px 32px;
+        width: auto;
+        justify-content: space-around;
+    }
+
+    .marcaPersonal>p{
+        font-size: 16px;
+    }
+    .containerLinks>a{
+        display: none;
+        font-size: 14px;
+    }
+    .containerLinks>a:nth-child(6){
+        display: block;
+    }
+    /* presentacion */
+    .presentation{
+        width: auto;
+        margin: auto;
+        height: 294px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: normal;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 16px
+    }
+
+    .information{
+        margin: 0px;
+        width: 328px;
+        height: 158px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .information> h1{
+        font-size: 22px;
+    }
+    .information>p{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .informationLinks{
+        gap: 10px;
+    }
+   .linkGoUp>a{
+    font-size: 14px;
+   }
+
+    .InformationImg{
+        width: 98px;
+        height: 98px;
+    }
+
+    .mePicture{
+        width: 98px;
+        height: 98px;
+    }
+
+    /* about me */
+
+    .aboutMe{
+        height: 350px;
+        width: 360px;
+    }
+
+    .aboutMePadding{
+        width: 704px;
+        height: 222px;
+    }
+
+    .aboutMePadding>h2{
+        font-size: 22px;
+    }
+
+    .aboutMePadding>p{
+        font-size: 14px;
+        width: auto;
+    }
+    
+    /* skills */
+
+    .skillsAndHobbies{
+        width: 360px;
+        height: 1016px;
+        gap: 0;
+        margin: 0;
+    }
+
+    .containerSkills{
+        width: 360px;
+        height: 508px;
+        justify-content: normal;
+    }
+
+    .containerSkills >h2{
+        font-size: 22px;
+    }
+
+
+    .boxContainer{
+        width: 328px;
+        height: 268px;
+        flex-wrap: wrap;
+    }
+
+    .box{
+        width: 156px;
+        height: 118px;
+        flex-grow: 1;
+    }
+
+    .box>h3{
+        font-size: 16px;
+    }
+
+    /* formacion */
+
+    .containerFormation{
+        width: 360px;
+        height: 441px;
+    }
+
+    .containerFormation> h2{
+        font-size: 22px;
+    }
+    .containerFormation> .boxContainer{
+        width: 296px;
+        height: 359px;
+    }
+
+    .boxF{
+        width: 224px;
+        height: 169px;
+    }
+    .boxF>h3{
+        font-size: 16px;
+    }
+    .boxF>p{
+        font-size: 14px;
+    }
+    .envolverImg{
+        width: 224px;
+        height: 118px;
+    }
+
+    /* proyecetos personales */
+
+
+    .experience{
+        width: 360px;
+        height: 330;
+    }
+
+    .experience > h2{
+        font-size: 22px;
+        margin: 32px auto 16px auto;
+    }
+    .experienceBox{
+        width: 296px;
+        height: 251px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+    }
+    .experienceInfo{
+        width: auto;
+    }
+    .experienceInfo> h2{
+        font-size: 16px;
+    }
+
+    .experienceInfo > p {
+        font-size: 14px;
+    }
+
+    .experienceImg{
+        width: 296px;
+        height: 144px;
+    }
+
+    /* contactame */
+
+    .contactame{
+        width: 360px;
+        height: 637px;
+        justify-content: normal;
+        
+    }
+    .formWrapImg{
+        display: none;
+        width: 360px;
+    }
+
+    .contactameWrap{
+        margin: 0;
+        width: 704px;
+        height: 573px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapData{
+     justify-content: center;
+     width: 296px;
+    }
+
+    .wrapText>h2{
+        font-size: 22px;
+    }
+    .formContact{
+        gap: 16px;
+    }
+
+    .inputContainer{
+        width: 296px;
+    }
+
+    .inputContainer> input{
+        width: 290px;
+    }
+
+    .inputContainer>textarea{
+        width: 290px;
+    }
+
+    .inputContainer > label{
+        width: 290px;
     }
 }
